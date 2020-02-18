@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="MoatBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <selectable>false</selectable>
+    <constructEffect>ConstructDirt</constructEffect>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <holdsRoof>false</holdsRoof>	
+  </ThingDef>    
+  
+<!--========================= Moat 1 =============================-->
+  
+  <ThingDef ParentName="MoatBase">
+    <defName>Moat</defName>
+    <label>Moat</label>
+    <description>A moat that is very difficult to pass.</description>
+    <thingClass>DefensiveMoats.Building_Moat</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Moats/Moat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,0,0)</rect>
+      </damageData>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Custom1</li>
+      </linkFlags>
+    </graphicData>
+    <uiIconPath>Things/Building/Moats/MoatIco</uiIconPath>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <altitudeLayer>Terrain</altitudeLayer>
+    <filth>
+      <canFilthAttach>false</canFilthAttach>
+      <rainWashes>true</rainWashes>
+    </filth>
+    <passability>Standable</passability>
+    <pathCost>300</pathCost>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0</fillPercent>
+    <coversFloor>false</coversFloor>
+    <destroyable>true</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <placingDraggableDimensions>2</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <selectable>false</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <holdsRoof>false</holdsRoof>
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <canOverlapZones>true</canOverlapZones>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Moats/Moat_Blueprint</texPath>
+      </blueprintGraphicData>
+      <isEdifice>false</isEdifice>
+    </building>
+    <designationHotKey>Misc3</designationHotKey>
+  </ThingDef>  
+</Defs>

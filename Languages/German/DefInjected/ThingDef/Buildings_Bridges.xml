@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- MoatBridgeWood 1 -->
+
+  <MoatBridgeWood.label>Holzbrücke</MoatBridgeWood.label>
+  <MoatBridgeWood.description>Eine Brücke für den Festungsgraben.</MoatBridgeWood.description>
+  <Blueprint_MoatBridgeWood.label>Holzbrücke (Plan)</Blueprint_MoatBridgeWood.label>
+  <Frame_MoatBridgeWood.label>Holzbrücke (Bau)</Frame_MoatBridgeWood.label>
+  <Frame_MoatBridgeWood.description>Eine Brücke für den Festungsgraben..</Frame_MoatBridgeWood.description>
+
+</LanguageData>

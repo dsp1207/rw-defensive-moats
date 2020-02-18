@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="BridgeBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <holdsRoof>false</holdsRoof>	
+  </ThingDef>    
+  
+<!--========================= Wooden Bridge =============================-->
+  
+  <ThingDef ParentName="BridgeBase">
+    <defName>MoatBridgeWood</defName>
+    <label>wooden moat bridge</label>
+    <description>A bridge to build over moats.</description>
+    <thingClass>DefensiveMoats.Building_MoatBridge</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Bridges/bridge_wood_h</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!--  <damageData>
+        <rect>(0,0,0,0)</rect>
+      </damageData>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Custom1</li>
+      </linkFlags>
+  	  -->
+    </graphicData>
+    <constructEffect>ConstructWood</constructEffect>
+    <!-- <uiIconPath>Things/Building/Moats/MoatIco</uiIconPath> -->
+    <costList>
+    	<WoodLog>20</WoodLog>
+    </costList>
+    <costStuffCount>20</costStuffCount>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>1.2</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <placeWorkers>
+      <li>DefensiveMoats.PlaceWorker_OnMoat</li>
+    </placeWorkers>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <filth>
+      <canFilthAttach>true</canFilthAttach>
+      <rainWashes>true</rainWashes>
+    </filth>
+    <passability>Standable</passability>
+    <pathCost>-300</pathCost>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>2</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <holdsRoof>false</holdsRoof>
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <canOverlapZones>true</canOverlapZones>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <!--
+      <blueprintGraphicData>
+        <texPath>Things/Building/Moats/Moat_Blueprint</texPath>
+      </blueprintGraphicData>
+  -->
+    </building>
+    <designationHotKey>Misc4</designationHotKey>
+  </ThingDef>  
+</Defs>

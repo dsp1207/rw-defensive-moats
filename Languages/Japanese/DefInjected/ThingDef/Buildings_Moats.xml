@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Moat 1 -->
+
+  <Moat.label>空堀</Moat.label>
+  <Moat.description>通過するのが非常に難しい空堀です。</Moat.description>
+  <Blueprint_Moat.label>空堀 (設計)</Blueprint_Moat.label>
+  <Frame_Moat.label>空堀 (施工)</Frame_Moat.label>
+  <Frame_Moat.description>通過するのが非常に難しい空堀です。</Frame_Moat.description>
+
+</LanguageData>

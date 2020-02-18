@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Moat 1 -->
+
+  <Moat.label>Festungsgraben</Moat.label>
+  <Moat.description>Ein schwer zu überquerender Graben.</Moat.description>
+  <Blueprint_Moat.label>Festungsgraben (Plan)</Blueprint_Moat.label>
+  <Frame_Moat.label>Festungsgraben (Bau)</Frame_Moat.label>
+  <Frame_Moat.description>Ein schwer zu überquerender Graben.</Frame_Moat.description>
+
+</LanguageData>
