@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-<name>Defensive Moats DEV</name>
-  <author>Denni</author>
-  <supportedVersions>
-    <li>1.0</li>
-  </supportedVersions>
-  <description>Dig moats that are difficult to pass.</description>
+<name>Defensive Moats</name>
+  	<packageId>Denni.WallMountedTurrets</packageId>
+	<author>Denni</author>
+	<url>https://github.com/dsp1207/rw-defensive-moats</url>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+	<modDependencies />
+	<loadAfter />
+	<description>Dig moats that are difficult to pass.
+
+Had to be redone completely from first version, so the tiles now link.
+
+Big thanks to Zylleon for the help with the code!
+
+7.2.2020: Added Japanese translations by Proxyer
+12.2.2020: Added Wooden Bridges
+
+Github: https://github.com/dsp1207/rw-defensive-moats/tree/master/Source/DefensiveMoats</description>
 </ModMetaData>
