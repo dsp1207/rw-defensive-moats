@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 <name>Defensive Moats</name>
-  	<packageId>Denni.WallMountedTurrets</packageId>
+  	<packageId>Denni.DefensiveMoats</packageId>
 	<author>Denni</author>
 	<url>https://github.com/dsp1207/rw-defensive-moats</url>
 	<supportedVersions>
