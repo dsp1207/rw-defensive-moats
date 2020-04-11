@@ -1,7 +1,4 @@
-﻿using System;
-using DefensiveMoats;
-using Verse;
-using RimWorld;
+﻿using Verse;
 
 namespace DefensiveMoats
 {
