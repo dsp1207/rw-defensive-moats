@@ -1,16 +1,13 @@
-﻿using System;
-using DefensiveMoats;
-using Verse;
-using RimWorld;
+﻿using Verse;
 
 namespace DefensiveMoats
 {
-	public class PlaceWorker_OnMoat : PlaceWorker
+    public class PlaceWorker_OnMoat : PlaceWorker
 	{
-		public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null)
+		public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null, Thing thing = null)
 		{
-			Thing thing = map.thingGrid.ThingAt(loc, MoatThingDefOf.Moat);
-			if (thing == null || thing.Position != loc)
+			Thing currentThing = map.thingGrid.ThingAt(loc, MoatThingDefOf.Moat);
+			if (currentThing == null || currentThing.Position != loc)
 			{
 				return "MustPlaceOnMoat".Translate();
 			}
